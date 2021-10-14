@@ -1,0 +1,17 @@
+type User @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  owner: String
+  address: Address @connection
+  firstName: String!
+  lastName: String!
+  email: String!
+}
+
+type Address @model {
+  id: ID!
+  country: String!
+  county: String
+  line1: String!
+  line2: String
+  postcode: String!
+}

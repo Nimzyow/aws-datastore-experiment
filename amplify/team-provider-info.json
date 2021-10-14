@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-scubads-dev-214146-authRole",
+      "UnauthRoleArn": "arn:aws:iam::756188073209:role/amplify-scubads-dev-214146-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::756188073209:role/amplify-scubads-dev-214146-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-scubads-dev-214146-deployment",
+      "UnauthRoleName": "amplify-scubads-dev-214146-unauthRole",
+      "StackName": "amplify-scubads-dev-214146",
+      "StackId": "arn:aws:cloudformation:eu-west-2:756188073209:stack/amplify-scubads-dev-214146/7dec7210-2a0a-11ec-aafa-026e906e02f0",
+      "AmplifyAppId": "d7ip6rf6mk3dk"
+    },
+    "categories": {
+      "auth": {
+        "scubads242f09a2": {}
+      }
+    }
+  }
+}

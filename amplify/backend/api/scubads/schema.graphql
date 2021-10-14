@@ -1,0 +1,30 @@
+type User
+  @model
+  @auth(
+    rules: [
+      { allow: owner, ownerField: "creator", operations: [create, read] }
+      {
+        allow: groups
+        groups: ["AdministratorAccess"]
+        operations: [create, update, delete, read]
+      }
+      { allow: private, operations: [read] }
+      { allow: public, provider: iam, operations: [read] }
+    ]
+  ) {
+  id: ID!
+  owner: String
+  address: Address @connection
+  firstName: String!
+  lastName: String!
+  email: String!
+}
+
+type Address @model @auth(rules: [{ allow: private }]) {
+  id: ID!
+  country: String!
+  county: String
+  line1: String!
+  line2: String
+  postcode: String!
+}
